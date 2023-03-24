@@ -17,6 +17,7 @@ rounds.forEach(() => {
     const playerSelection = prompt("Enter Your Choice:");
     const result = playGame(playerSelection, computerSelection);
     console.log(result);
+    alert(result);
     if (result.startsWith("You win!")) {
         playerScore++;
     } else if (result.startsWith("You lose!")) {
@@ -25,7 +26,10 @@ rounds.forEach(() => {
 });
 
 console.log(`Player Score: ${playerScore}`);
+alert(`Player Score: ${playerScore}`);
 console.log(`Computer Score: ${computerScore}`);
+alert(`Computer Score: ${computerScore}`);
+
 
 
 
