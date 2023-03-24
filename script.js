@@ -51,10 +51,19 @@ function playGame (playerSelection, computerSelection) {
 }
 
 
-console.log(playGame(playerSelection, computerSelection));
+// console.log(playGame(playerSelection, computerSelection));
 
 
+const rounds = [1, 2, 3, 4, 5];
 
+rounds.forEach(() => {
+    const playerSelection = prompt("Enter Your Choice:");
+    const computerSelection = getComputerChoice(choices);
+    console.log(`Computer Has Chosen ${computerSelection}`);
+    console.log(playGame(playerSelection, computerSelection));
+  });
+
+  
 
 
 
