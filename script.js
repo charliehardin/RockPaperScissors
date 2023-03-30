@@ -74,9 +74,9 @@ function playGame (pChoice, computerSelection) {
     if (playerScore == 5 || computerScore == 5){
         gameOverMessage.textContent = "Game Over!"
        if (playerScore > computerScore){
-        gameOverMessage.textContent = "You Win!"
+        gameOverMessage.textContent = "Game Over, You Win!"
         } else if (computerScore > playerScore){
-            gameOverMessage.textContent = "You Lose!"
+            gameOverMessage.textContent = "Game Over, You Lose!"
         }
     }
     
